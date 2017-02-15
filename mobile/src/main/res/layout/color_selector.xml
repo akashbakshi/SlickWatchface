@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/cast_intro_overlay_background_color"
+    android:id="@+id/rLayout">
+
+    <TextView
+        android:text="Color Selector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView3"
+        android:textColor="@color/wallet_bright_foreground_disabled_holo_light"
+        android:textSize="20sp" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:id="@+id/sbRed"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:scrollbarSize="20dp"
+        android:scrollbarStyle="outsideOverlay"
+        android:thumbTint="@android:color/holo_red_dark"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:id="@+id/sbBlue"
+        android:thumbTint="@color/blue"
+        android:layout_below="@+id/sbGreen"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="69dp"
+        android:id="@+id/sbGreen"
+        android:thumbTint="@color/green"
+        android:layout_below="@+id/sbRed"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sbBlue"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="62dp"
+        android:id="@+id/sbAlpha"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:thumbTint="@android:color/background_light" />
+
+    <TextView
+        android:text="255"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="26dp"
+        android:id="@+id/tvGreen"
+        android:textColor="@color/green"
+        android:layout_marginLeft="9dp"
+        android:layout_marginStart="9dp"
+        android:layout_alignBottom="@+id/sbGreen"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="255"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="27dp"
+        android:id="@+id/tvBlue"
+        android:textColor="@color/blue"
+        android:layout_above="@+id/sbAlpha"
+        android:layout_alignLeft="@+id/tvGreen"
+        android:layout_alignStart="@+id/tvGreen" />
+
+    <TextView
+        android:text="255"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvAlpha"
+        android:textColor="@android:color/background_light"
+        android:layout_marginBottom="27dp"
+        android:layout_alignBottom="@+id/sbAlpha"
+        android:layout_alignLeft="@+id/tvBlue"
+        android:layout_alignStart="@+id/tvBlue" />
+
+    <TextView
+        android:text="255"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvRed"
+        android:textColor="@color/Red"
+        android:layout_below="@+id/textView3"
+        android:layout_alignLeft="@+id/tvGreen"
+        android:layout_alignStart="@+id/tvGreen" />
+
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.akash.slickwatchface.MainActivity"
+    android:background="@color/common_google_signin_btn_text_dark_focused">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Highlighted Hour Color:"
+        android:id="@+id/tvHHColor"
+        android:textColor="@android:color/background_light"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="28dp" />
+
+    <TextView
+        android:text="AM Indicator Color:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvHHColor"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="62dp"
+        android:id="@+id/tvAMColor"
+        android:layout_toLeftOf="@+id/btnHHColor"
+        android:layout_toStartOf="@+id/btnHHColor"
+        android:textColor="@android:color/background_light" />
+
+    <Button
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:id="@+id/btnHHColor"
+        android:background="@color/DefaultHourColor"
+        android:onClick="onHHColorClick (MainActivity)"
+        android:layout_toRightOf="@+id/tvHHColor"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_alignTop="@+id/tvHHColor"
+        android:layout_alignBottom="@+id/tvHHColor"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignTop="@+id/tvAMColor"
+        android:layout_alignLeft="@+id/btnHHColor"
+        android:layout_alignStart="@+id/btnHHColor"
+        android:id="@+id/btnAMColor"
+        android:layout_alignBottom="@+id/tvAMColor"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/skyBlue" />
+
+    <TextView
+        android:text="PM Indicator Color:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvAMColor"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="61dp"
+        android:id="@+id/tvPMColor"
+        android:textColor="@android:color/background_light" />
+
+    <Button
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignTop="@+id/tvPMColor"
+        android:layout_alignLeft="@+id/btnAMColor"
+        android:layout_alignStart="@+id/btnAMColor"
+        android:id="@+id/btnPMColor"
+        android:layout_alignBottom="@+id/tvPMColor"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/glowInTheDark" />
+</RelativeLayout>

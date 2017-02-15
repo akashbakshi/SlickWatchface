@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name= "DefaultHourColor">#0000f0</color>
+    <color name="green">#00df00</color>
+    <color name="blue">#0071da</color>
+    <color name="Red">#de0004</color>
+    <color name="skyBlue">#50caff</color>
+    <color name="glowInTheDark">#00ffa0</color>
+</resources>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Slick Watchface</string>
+    <string name="message">Watch face tapped</string>
+    <string name="my_analog_name">Slick Watchface</string>
+</resources>
