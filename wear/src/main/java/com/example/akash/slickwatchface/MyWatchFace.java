@@ -431,7 +431,7 @@ public class MyWatchFace extends CanvasWatchFaceService {
                // canvas.drawLine(mCenterX + innerX, mCenterY + innerY, mCenterX + outerX, mCenterY + outerY, mTickAndCirclePaint);
             }
 
-            innerTickRadius = mCenterX - 50;
+            innerTickRadius = mCenterX - 80;
 
             Paint minute = new Paint();
             minute.setTextSize(22.0f);
